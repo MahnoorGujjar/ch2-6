@@ -1,13 +1,25 @@
 // QUESTION 1
 
 
-// let a = 10 ;
+//question 1 (a)
+// let  a=10;
+// console.log("RESULTS");
+// console.log("The value of a is:",a);
+// console.log("----------------------");
+// a++;
+// console.log("The value of a++ is: ", a);
+// console.log("now the value of a is :",a);
 
-//  ++a 
-//  a++
-//  --a
-//  a--
-//  console.log(a);
+// console.log("The value of a++ is: ", a);
+// a++;
+// console.log("Now the value of a is :",a);
+// --a;
+// console.log("The value of --a is:",a);
+// console.log("Now the value of a is",a);
+
+// console.log("The value of a-- is:",a);
+// a--;
+// console.log("Now the value of a-- is:",a);
  
 
 //..........................................................................................
@@ -82,26 +94,26 @@
 // A: Take subject names
 alert("name the 3 subjects which you want to know your marks")
 
-let sub1 =parseInt(prompt["name the first subject"]);
-let sub2 =parseInt(prompt["name the second subject"]);
-let sub3 =parseInt(prompt["name the third subject"]);
+let sub1 =prompt("name the first subject");
+let sub2 =prompt("name the second subject");
+let sub3 =prompt("name the third subject");
 
 
 
 
 // B: Total marks for each subject
-let totalMarks = parseInt(prompt(`\t \t \t \t \t \t Enter total marks for subjects:`));
-console.log("SUBJECTS TOTAL MARKS MsrkOBT PERCENTAGE");
+let totalMarks = parseInt(prompt("\t \t \t \t \t \t Enter total marks for subjects:"));
+console.log();("SUBJECTS TOTAL MARKS MsrkOBT PERCENTAGE");
 
 
 let obtainedMarks1 = parseInt(prompt(`Enter obtained marks for ${sub1}:`));
-let obtainedMarks2 = parseInt(prompt(`Enter obtained marks for ${sub2}:`));
+let obtainedMarks2 = parseInt(prompt(`Enter obtained marks for ${sub2}:`));   
 let obtainedMarks3 = parseInt(prompt(`Enter obtained marks for ${sub3}:`));
 
 
-console.log(sub1 , "       " +totalMarks  , "      ", obtainedMarks1 , "     "     );
-console.log(sub2 , "       " +totalMarks   , "      ", obtainedMarks2 , "     "     );
-console.log(sub3 , "       " + totalMarks  , "      ", obtainedMarks3 , "     "     );
+console.log(sub1 , "       " +totalMarks  , "      ", obtainedMarks1 , "     "   + obtainedMarks1/totalMarks*100 + "%"  );
+console.log(sub2 , "       " +totalMarks   , "      ", obtainedMarks2 , "     "    + obtainedMarks2/totalMarks*100 + "%" );
+console.log(sub3 , "       " + totalMarks  , "      ", obtainedMarks3 , "     "   + obtainedMarks3/totalMarks*100 + "%"  );
 
 
 let sum = totalMarks*3
@@ -110,7 +122,7 @@ let totalObtained = obtainedMarks1 + obtainedMarks2 + obtainedMarks3;
 
 let totalperc = totalObtained/ sum*100 
 
-document.write("      " +sum +"     " + totalObtained + "     "+  totalperc+"%");
+console.log("         " +sum +"        " + totalObtained + "       "+  totalperc+"%");
 
 
 
